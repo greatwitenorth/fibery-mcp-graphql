@@ -21,7 +21,7 @@ This server implements the Model Context Protocol and can be used with any MCP-c
 {
   "mcpServers": {
     "fibery-mcp-graphql": {
-      "command": "node",
+      "command": "node", // note: if using nvm, use the full path to the version of node you want to use
       "args": ["/full-path-to/index.js"],
       "env": {
         "FIBERY_TOKEN": "your_fibery_token",
