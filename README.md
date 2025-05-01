@@ -1,10 +1,10 @@
 # Fibery MCP GraphQL Server
 
-This is a Model Context Protocol (MCP) server that provides tools for interacting with Fibery's GraphQL API.
+This is a Model Context Protocol (MCP) server that provides tools to introspect the Fibery GraphQL API to help your LLM to write valid graphql queries and mutations.
 
 ## Features
 
-- **List Spaces**: Fetches and lists all available GraphQL spaces in your Fibery account
+- **List Spaces and Types**: Fetches and lists all available GraphQL spaces and types in your Fibery account
 - **Get Schema SDL**: Gets the complete GraphQL schema SDL for a Fibery space
 - **Validate Fibery GraphQL**: Validates a generated GraphQL query or mutation for Fibery against the known schema
 
@@ -17,7 +17,7 @@ This is a Model Context Protocol (MCP) server that provides tools for interactin
 
 This server implements the Model Context Protocol and can be used with any MCP-compatible client. The MCP endpoint is available at:
 
-```
+```json
 {
   "mcpServers": {
     "fibery-mcp-graphql": {
@@ -30,6 +30,7 @@ This server implements the Model Context Protocol and can be used with any MCP-c
     }
   }
 }
+```
 
 ## Installation
 
@@ -42,9 +43,9 @@ bun
 
 ## MCP Tools
 
-### list_spaces
+### list_spaces_and_types
 
-Lists all available GraphQL spaces in your Fibery account.
+Lists all available GraphQL spaces and types in your Fibery account.
 
 **Parameters**: None
 
