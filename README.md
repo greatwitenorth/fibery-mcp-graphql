@@ -38,7 +38,7 @@ This server implements the Model Context Protocol and can be used with any MCP-c
 2. Install dependencies:
 
 ```bash
-bun
+bun install
 ```
 
 ## MCP Tools
