@@ -1,0 +1,29 @@
+{
+  "name": "fibery-mcp-graphql",
+  "version": "1.0.0",
+  "description": "MCP server for Fibery GraphQL API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "fibery",
+    "graphql"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "fibery-unofficial": "^0.2.1",
+    "graphql": "^16.11.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
